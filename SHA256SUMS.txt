@@ -1,0 +1,2 @@
+598567666719e0426d6cf7c4d4a5e9eb9a9684d0c187a4d64581bd14d0436173  CodexClaudeControl_dist_v1_0_0.zip
+70510757d1de0225e778fc341fd84ea93edd1a5e83c18a64cb14f037d7633186  CodexClaudeControl-Skill_dist_v1_0_0.zip
