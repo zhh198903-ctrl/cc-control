@@ -10,8 +10,10 @@ CC Control（电脑端名称：Codex Claude Control）配合 Windows 与 FoloToy
 
 - [下载 Windows 版 1.0.0](https://github.com/zhh198903-ctrl/cc-control/releases/latest)
 - [下载站与官方硬件购买入口](http://106.14.76.130/#cc-control-hardware)
-- [在线试玩](http://106.14.76.130/cc-control-demo/)：离线演示数据，不连接真实 AI 账号、不控制电脑、不采集麦克风。使用较早的演示固件，部分画面和选项与正式版不同。
-- [FoloToy 社区玩法](https://ai-passport.folotoy.cn/plays/community/1828/cc-control-claude-codex/)
+- [在线试玩](http://106.14.76.130/cc-control-demo/)：独立的离线交互试玩固件，可实际选择会话、执行预设、审批、单选和多选、查看上下文及设置。无需蓝牙或 Wi-Fi 配网，不连接真实 AI、不控制电脑、不采集麦克风。
+- [FoloToy 社区试玩](https://ai-passport.folotoy.cn/plays/community/1828/cc-control-claude-codex/)：离线交互版更新已提交，待社区审核后生效。
+
+**正式版与试玩版分开分发。** 本仓库 Releases 中的 Windows 安装包只包含客户固件，不含离线试玩固件；自动更新也不会安装试玩版。需要遥控真实电脑时，请使用 Windows 正式版内的一键烧录。社区的离线试玩固件不能替代客户固件。
 
 ## 可以做什么
 
@@ -38,7 +40,7 @@ CC Control 为商业软件。USB、局域网、蓝牙不限次数；云中继内
 
 PC 核心采用 Cython 本机编译保护，发行包带 Ed25519 完整性校验。这能提高逆向和篡改成本，不是无法破解的加密，也不是 Windows Authenticode 签名。第三方组件遵循各自许可证，见随包许可资料。
 
-当前发行仍有未完成的独立验收：本轮 Claude 真实账号复测、真人语音确认、人工连接切换及实际付款激活。历史版本的实测不替代这些项目。在线试玩仅展示交互流程。
+当前发行仍有未完成的独立验收：本轮 Claude 真实账号复测、真人语音确认、人工连接切换及实际付款激活。历史版本的实测不替代这些项目。在线试玩实际运行固件交互，AI 回复为预设数据，不作为真实账号或实物验收。
 
 可选的 `CodexClaudeControl-Skill_dist_v1_0_0.zip` 是安装和排障辅助，产品运行不依赖它。
 
@@ -48,6 +50,6 @@ CC Control turns an AI Passport badge into a portable remote for Claude and Code
 
 This is a **binary distribution repository**, not the PC application's source repository. Download and extract the complete Windows package, run `CodexClaudeControl.exe`, connect the badge by USB, then follow onboarding to connect your AI session.
 
-USB, LAN, and Bluetooth are unmetered. The cloud relay includes a 500-message trial. **CC Control lifetime license ¥88**, excluding hardware and AI service fees. Third-party licenses remain applicable. The online demo uses scripted data and an earlier demonstration firmware; it does not connect to an AI account or control your PC.
+USB, LAN, and Bluetooth are unmetered. The cloud relay includes a 500-message trial. **CC Control lifetime license ¥88**, excluding hardware and AI service fees. Third-party licenses remain applicable. The interactive trial runs separate offline firmware with scripted data, actual buttons, session actions, approvals, and question flows. Bluetooth, Wi-Fi, and microphone capture are disabled. It does not control your PC. Windows Releases and the stable update feed contain only customer firmware, never the trial firmware. The community trial update is pending review.
 
 See [CHANGELOG.md](CHANGELOG.md) and [Releases](https://github.com/zhh198903-ctrl/cc-control/releases).
